@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="singletonBean" class="com.guppy.spring3beanscopes.CustomerService">
+            <property name="message" value="Message by Singleton Bean XML ... " />
+	</bean>
+        
+        <bean id="prototypeBean" class="com.guppy.spring3beanscopes.CustomerService" scope="prototype">
+            <property name="message" value="Message by Prototype Bean XML ... " />
+	</bean>
+
+</beans>

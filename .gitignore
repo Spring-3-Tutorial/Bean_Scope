@@ -1,0 +1,7 @@
+
+# Mac Os conf files
+.DS_Store
+Desktop.ini
+
+# Maven jar files
+*.jar
